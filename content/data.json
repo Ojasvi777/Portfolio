@@ -1,0 +1,128 @@
+[
+  {
+    "metric": "StageConnect user conversations",
+    "value": "About 325",
+    "evidence": "SELF-REPORTED",
+    "method": "300 performers and users, 25 agencies and brands"
+  },
+  {
+    "metric": "StageConnect prospects reached",
+    "value": "700 to 800",
+    "evidence": "SELF-REPORTED",
+    "method": "Direct user outreach"
+  },
+  {
+    "metric": "StageConnect waitlist",
+    "value": "about 500",
+    "evidence": "SELF-REPORTED",
+    "method": "Pre-launch waitlist database export"
+  },
+  {
+    "metric": "Brands confirmed to join StageConnect",
+    "value": "25 to 30",
+    "evidence": "SELF-REPORTED",
+    "method": "Pre-launch onboarding confirmations across India"
+  },
+  {
+    "metric": "KGH delivery time",
+    "value": "2 months",
+    "evidence": "SELF-REPORTED",
+    "method": "Project timeline and delivery milestones"
+  },
+  {
+    "metric": "License verification manual effort",
+    "value": "about 80% less",
+    "evidence": "ESTIMATE",
+    "method": "[TODO: confirm with timing]"
+  },
+  {
+    "metric": "CropSky crop recommendation accuracy",
+    "value": "94.24%",
+    "evidence": "MEASURED",
+    "method": "XGBoost cross-validated sensor model"
+  },
+  {
+    "metric": "CropSky disease detection accuracy",
+    "value": "92.6%",
+    "evidence": "MEASURED",
+    "method": "CNN leaf disease image test set"
+  },
+  {
+    "metric": "FinAssist Precision@4",
+    "value": "95%",
+    "evidence": "MEASURED",
+    "method": "Automated evaluation benchmark"
+  },
+  {
+    "metric": "FinAssist MRR",
+    "value": "1.0",
+    "evidence": "MEASURED",
+    "method": "Automated evaluation benchmark"
+  },
+  {
+    "metric": "FinAssist faithfulness",
+    "value": "90%",
+    "evidence": "MEASURED",
+    "method": "Automated evaluation benchmark"
+  },
+  {
+    "metric": "FinAssist answer correctness",
+    "value": "about 82%",
+    "evidence": "MEASURED",
+    "method": "Automated evaluation benchmark"
+  },
+  {
+    "metric": "FinAssist retrieval latency",
+    "value": "about 207 ms",
+    "evidence": "MEASURED",
+    "method": "Monte Carlo dropout filter vs ~5 ms for plain search"
+  },
+  {
+    "metric": "Global Energy Trends records",
+    "value": "10K+ records (200+ countries)",
+    "evidence": "MEASURED",
+    "method": "Our World in Data 1965 to 2023 cleaned database"
+  },
+  {
+    "metric": "Global Energy regression R-squared",
+    "value": "about 0.87",
+    "evidence": "MEASURED",
+    "method": "Statsmodels out-of-sample evaluation"
+  },
+  {
+    "metric": "Global Energy ARIMA mean MAPE",
+    "value": "about 6.5%",
+    "evidence": "MEASURED",
+    "method": "ARIMA forecasts for major economies"
+  },
+  {
+    "metric": "Perplexity exploratory test queries",
+    "value": "4 queries",
+    "evidence": "MEASURED",
+    "method": "Factual, technical, comparative, time-sensitive queries"
+  },
+  {
+    "metric": "Zudio survey sample",
+    "value": "33",
+    "evidence": "MEASURED",
+    "method": "In-store survey, Vellore"
+  },
+  {
+    "metric": "Dramatics events per year",
+    "value": "50 to 60",
+    "evidence": "SELF-REPORTED",
+    "method": "Annual schedule"
+  },
+  {
+    "metric": "Riviera attendance",
+    "value": "about 500",
+    "evidence": "SELF-REPORTED",
+    "method": "Auditorium capacity / ticketing"
+  },
+  {
+    "metric": "Sponsorship raised",
+    "value": "Rs 60K+",
+    "evidence": "SELF-REPORTED",
+    "method": "Sponsorship accounts"
+  }
+]

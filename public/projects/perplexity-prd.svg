@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradP" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#090d16" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+    <linearGradient id="accentPerp" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#20b2aa" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <filter id="glowP" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="25" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bgGradP)" />
+
+  <!-- Grid pattern -->
+  <pattern id="gridP" width="20" height="20" patternUnits="userSpaceOnUse">
+    <circle cx="2" cy="2" r="1" fill="#334155" opacity="0.3" />
+  </pattern>
+  <rect width="800" height="500" fill="url(#gridP)" />
+
+  <circle cx="400" cy="180" r="140" fill="#20b2aa" opacity="0.1" filter="url(#glowP)" />
+
+  <!-- Window Container -->
+  <rect x="40" y="30" width="720" height="440" rx="14" fill="#0b1120" stroke="#1e293b" stroke-width="1.5" />
+
+  <!-- Window Header -->
+  <rect x="40" y="30" width="720" height="40" rx="14" fill="#131c31" />
+  <rect x="40" y="58" width="720" height="12" fill="#131c31" />
+  <circle cx="65" cy="50" r="4.5" fill="#ef4444" />
+  <circle cx="82" cy="50" r="4.5" fill="#f59e0b" />
+  <circle cx="99" cy="50" r="4.5" fill="#10b981" />
+
+  <!-- Address Pill -->
+  <rect x="220" y="38" width="360" height="24" rx="12" fill="#0a0f1d" stroke="#334155" stroke-width="1" />
+  <text x="400" y="54" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="11" text-anchor="middle">
+    perplexity.ai/prd · evidence-first-answers
+  </text>
+
+  <!-- Content -->
+  <g transform="translate(65, 85)">
+    <!-- Header Badge -->
+    <rect x="0" y="0" width="180" height="24" rx="6" fill="#0f2b38" stroke="#20b2aa" stroke-width="1" />
+    <text x="90" y="16" fill="#2dd4bf" font-family="monospace" font-size="10" font-weight="bold" text-anchor="middle">
+      PRD · EVIDENCE-FIRST AI
+    </text>
+
+    <!-- Main Title -->
+    <text x="0" y="52" fill="#f8fafc" font-family="-apple-system, sans-serif" font-size="22" font-weight="bold">
+      Perplexity AI Search Experience Teardown
+    </text>
+    <text x="0" y="74" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="12">
+      Sentence-Level Source Mapping &amp; Epistemic Verification Pipeline
+    </text>
+
+    <!-- UI Mockup: Search Box -->
+    <g transform="translate(0, 95)">
+      <rect x="0" y="0" width="670" height="42" rx="10" fill="#111c33" stroke="#334155" stroke-width="1" />
+      <circle cx="22" cy="21" r="7" fill="none" stroke="#2dd4bf" stroke-width="2" />
+      <line x1="27" y1="26" x2="33" y2="32" stroke="#2dd4bf" stroke-width="2" stroke-linecap="round" />
+      <text x="44" y="25" fill="#e2e8f0" font-family="-apple-system, sans-serif" font-size="12">
+        What is the factual basis for the 2026 economic forecast?
+      </text>
+      <rect x="560" y="8" width="96" height="26" rx="6" fill="#0284c7" />
+      <text x="608" y="25" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">
+        Verify Facts
+      </text>
+    </g>
+
+    <!-- Answer Box with Sentence Grounding -->
+    <g transform="translate(0, 150)">
+      <rect x="0" y="0" width="670" height="205" rx="12" fill="#0f172a" stroke="#1e293b" />
+      
+      <!-- Top meta bar -->
+      <rect x="15" y="12" width="130" height="20" rx="4" fill="#064e3b" />
+      <text x="80" y="26" fill="#34d399" font-family="monospace" font-size="10" font-weight="bold" text-anchor="middle">
+        GROUNDED ANSWER
+      </text>
+      <text x="160" y="26" fill="#64748b" font-family="monospace" font-size="10">
+        LATENCY OVERHEAD: +148ms · CITATIONS: 4 VERIFIED
+      </text>
+
+      <!-- Sentence 1 (High Confidence) -->
+      <g transform="translate(15, 45)">
+        <rect x="0" y="0" width="640" height="44" rx="8" fill="#132238" stroke="#10b981" stroke-width="1" />
+        <circle cx="16" cy="22" r="5" fill="#10b981" />
+        <text x="32" y="20" fill="#f1f5f9" font-family="-apple-system, sans-serif" font-size="11" font-weight="bold">
+          &quot;Global renewable generation grew 14.8% annually driven by solar adoption.&quot;
+        </text>
+        <text x="32" y="35" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="10">
+          Source: IEA World Energy Outlook 2025 · Direct Match (Confidence 98.4%)
+        </text>
+        <rect x="530" y="11" width="95" height="22" rx="4" fill="#065f46" />
+        <text x="577" y="26" fill="#a7f3d0" font-family="monospace" font-size="9" font-weight="bold" text-anchor="middle">
+          VERIFIED PASSAGE
+        </text>
+      </g>
+
+      <!-- Sentence 2 (Conflicting / Freshness Warning) -->
+      <g transform="translate(15, 98)">
+        <rect x="0" y="0" width="640" height="44" rx="8" fill="#24191a" stroke="#f59e0b" stroke-width="1" />
+        <circle cx="16" cy="22" r="5" fill="#f59e0b" />
+        <text x="32" y="20" fill="#fef3c7" font-family="-apple-system, sans-serif" font-size="11" font-weight="bold">
+          &quot;Projections for Q4 GDP range between 2.1% and 2.7% across major agencies.&quot;
+        </text>
+        <text x="32" y="35" fill="#fbbf24" font-family="-apple-system, sans-serif" font-size="10">
+          Disputed Range: IMF estimates 2.1%, World Bank reports 2.7% · Freshness Check Needed
+        </text>
+        <rect x="530" y="11" width="95" height="22" rx="4" fill="#78350f" />
+        <text x="577" y="26" fill="#fde68a" font-family="monospace" font-size="9" font-weight="bold" text-anchor="middle">
+          RANGE FLAGGED
+        </text>
+      </g>
+
+      <!-- PRD Metric Summary Footnote -->
+      <g transform="translate(15, 155)">
+        <rect x="0" y="0" width="205" height="38" rx="6" fill="#1e293b" />
+        <text x="12" y="16" fill="#94a3b8" font-family="monospace" font-size="9">CLAIM-SUPPORT PRECISION</text>
+        <text x="12" y="31" fill="#38bdf8" font-family="monospace" font-size="13" font-weight="bold">96.2% Accuracy</text>
+
+        <rect x="217" y="0" width="205" height="38" rx="6" fill="#1e293b" />
+        <text x="229" y="16" fill="#94a3b8" font-family="monospace" font-size="9">UNSUPPORTED CLAIM RATE</text>
+        <text x="229" y="31" fill="#4ade80" font-family="monospace" font-size="13" font-weight="bold">&lt; 3.8% Hallucination</text>
+
+        <rect x="434" y="0" width="205" height="38" rx="6" fill="#1e293b" />
+        <text x="446" y="16" fill="#94a3b8" font-family="monospace" font-size="9">PRODUCT SCOPE</text>
+        <text x="446" y="31" fill="#f43f5e" font-family="monospace" font-size="13" font-weight="bold">Full PRD &amp; Specs</text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18191b" />
+      <stop offset="50%" stop-color="#131314" />
+      <stop offset="100%" stop-color="#0a0a0c" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="30" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgGrad)" />
+
+  <!-- Dotted grid -->
+  <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+    <circle cx="2" cy="2" r="1" fill="#3c4043" opacity="0.4" />
+  </pattern>
+  <rect width="800" height="600" fill="url(#grid)" />
+
+  <!-- Ambient glow orb -->
+  <circle cx="400" cy="250" r="180" fill="#06b6d4" opacity="0.12" filter="url(#glow)" />
+
+  <!-- Browser/Window Mockup Container -->
+  <rect x="50" y="40" width="700" height="520" rx="16" fill="#1e1f20" stroke="#3c4043" stroke-width="2" />
+
+  <!-- Window Header -->
+  <rect x="50" y="40" width="700" height="42" rx="16" fill="#282a2c" />
+  <rect x="50" y="70" width="700" height="12" fill="#282a2c" />
+  <circle cx="75" cy="61" r="5" fill="#ea4335" />
+  <circle cx="95" cy="61" r="5" fill="#fbbc05" />
+  <circle cx="115" cy="61" r="5" fill="#34a853" />
+
+  <!-- Address Pill -->
+  <rect x="220" y="49" width="360" height="24" rx="12" fill="#18191b" stroke="#3c4043" stroke-width="1" />
+  <text x="400" y="65" fill="#9aa0a6" font-family="-apple-system, sans-serif" font-size="11" text-anchor="middle">
+    globalenergytrends.app/workspace
+  </text>
+
+  <!-- Visual content inside mockup -->
+  <g transform="translate(70, 100)">
+    <!-- Badge -->
+    <rect x="0" y="0" width="160" height="26" rx="6" fill="#18191b" stroke="#06b6d4" stroke-width="1" />
+    <text x="80" y="17" fill="#06b6d4" font-family="monospace" font-size="11" font-weight="bold" text-anchor="middle">
+      STAGE: COMPLETE
+    </text>
+
+    <!-- Main Title -->
+    <text x="0" y="55" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="24" font-weight="bold">
+      Global Energy Trends
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="80" fill="#9aa0a6" font-family="-apple-system, sans-serif" font-size="13">
+      Forecasting & Regression Dashboard (Statsmodels, ARIMA, Power BI)
+    </text>
+
+    <!-- Inner UI Graphic elements -->
+    
+  <g transform="translate(0, 110)">
+    <rect x="0" y="0" width="660" height="280" rx="8" fill="#18191b" stroke="#3c4043" />
+    <text x="20" y="30" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="13" font-weight="bold">
+      Time-Series Forecasting &amp; Regression Analysis (10K+ Records Across 200+ Countries)
+    </text>
+
+    <!-- Chart simulation -->
+    <rect x="20" y="50" width="410" height="210" rx="8" fill="#141517" stroke="#282a2c" />
+    <path d="M 40 220 Q 120 180 200 150 T 320 100 T 400 70" fill="none" stroke="#10b981" stroke-width="3" />
+    <path d="M 40 120 Q 120 140 200 160 T 320 180 T 400 210" fill="none" stroke="#ef4444" stroke-width="2" stroke-dasharray="4" />
+    <text x="310" y="65" fill="#34d399" font-family="monospace" font-size="9">Renewables Forecast (ARIMA)</text>
+    <text x="310" y="225" fill="#f87171" font-family="monospace" font-size="9">Fossil Share Trend</text>
+
+    <!-- Regression metrics -->
+    <rect x="445" y="50" width="195" height="95" rx="8" fill="#141517" stroke="#3b82f6" />
+    <text x="460" y="78" fill="#9aa0a6" font-family="monospace" font-size="10">REGRESSION R²</text>
+    <text x="460" y="105" fill="#60a5fa" font-family="monospace" font-size="22" font-weight="bold">~0.87</text>
+    <text x="460" y="128" fill="#93c5fd" font-family="-apple-system, sans-serif" font-size="10">Out-of-sample fit</text>
+
+    <rect x="445" y="160" width="195" height="100" rx="8" fill="#141517" stroke="#10b981" />
+    <text x="460" y="188" fill="#9aa0a6" font-family="monospace" font-size="10">ARIMA MEAN MAPE</text>
+    <text x="460" y="215" fill="#34d399" font-family="monospace" font-size="22" font-weight="bold">~6.5%</text>
+    <text x="460" y="238" fill="#a7f3d0" font-family="-apple-system, sans-serif" font-size="10">Interactive Power BI</text>
+  </g>
+
+  </g>
+</svg>

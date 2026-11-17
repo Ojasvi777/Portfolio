@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18191b" />
+      <stop offset="50%" stop-color="#131314" />
+      <stop offset="100%" stop-color="#0a0a0c" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="30" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgGrad)" />
+
+  <!-- Dotted grid -->
+  <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+    <circle cx="2" cy="2" r="1" fill="#3c4043" opacity="0.4" />
+  </pattern>
+  <rect width="800" height="600" fill="url(#grid)" />
+
+  <!-- Ambient glow orb -->
+  <circle cx="400" cy="250" r="180" fill="#10b981" opacity="0.12" filter="url(#glow)" />
+
+  <!-- Browser/Window Mockup Container -->
+  <rect x="50" y="40" width="700" height="520" rx="16" fill="#1e1f20" stroke="#3c4043" stroke-width="2" />
+
+  <!-- Window Header -->
+  <rect x="50" y="40" width="700" height="42" rx="16" fill="#282a2c" />
+  <rect x="50" y="70" width="700" height="12" fill="#282a2c" />
+  <circle cx="75" cy="61" r="5" fill="#ea4335" />
+  <circle cx="95" cy="61" r="5" fill="#fbbc05" />
+  <circle cx="115" cy="61" r="5" fill="#34a853" />
+
+  <!-- Address Pill -->
+  <rect x="220" y="49" width="360" height="24" rx="12" fill="#18191b" stroke="#3c4043" stroke-width="1" />
+  <text x="400" y="65" fill="#9aa0a6" font-family="-apple-system, sans-serif" font-size="11" text-anchor="middle">
+    cropskymlmodels.app/workspace
+  </text>
+
+  <!-- Visual content inside mockup -->
+  <g transform="translate(70, 100)">
+    <!-- Badge -->
+    <rect x="0" y="0" width="160" height="26" rx="6" fill="#18191b" stroke="#10b981" stroke-width="1" />
+    <text x="80" y="17" fill="#10b981" font-family="monospace" font-size="11" font-weight="bold" text-anchor="middle">
+      STAGE: SHIPPED TO STARTUP
+    </text>
+
+    <!-- Main Title -->
+    <text x="0" y="55" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="24" font-weight="bold">
+      CropSky ML Models
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="80" fill="#9aa0a6" font-family="-apple-system, sans-serif" font-size="13">
+      XGBoost Crop Recommender (94.24%) & CNN Disease Classifier (92.6%)
+    </text>
+
+    <!-- Inner UI Graphic elements -->
+    
+  <g transform="translate(0, 110)">
+    <rect x="0" y="0" width="310" height="280" rx="8" fill="#18191b" stroke="#3c4043" />
+    <text x="20" y="30" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="13" font-weight="bold">Engine 1: XGBoost Crop Recommender</text>
+    <rect x="20" y="50" width="270" height="95" rx="6" fill="#141517" stroke="#10b981" />
+    <text x="35" y="78" fill="#9aa0a6" font-family="monospace" font-size="10">MODEL ACCURACY</text>
+    <text x="35" y="105" fill="#34d399" font-family="monospace" font-size="22" font-weight="bold">94.24%</text>
+    <text x="35" y="130" fill="#a7f3d0" font-family="-apple-system, sans-serif" font-size="10">Soil NPK + Humidity + Temp + Rainfall</text>
+
+    <text x="20" y="175" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="11" font-weight="bold">Dataset &amp; Engineering:</text>
+    <text x="20" y="198" fill="#9aa0a6" font-family="monospace" font-size="10">10K+ Agricultural Samples Cleaned</text>
+    <text x="20" y="218" fill="#9aa0a6" font-family="monospace" font-size="10">Statsmodels &amp; scikit-learn Tuning</text>
+    <text x="20" y="238" fill="#60a5fa" font-family="monospace" font-size="10">Shipped to Startup Production</text>
+
+    <!-- Engine 2 CNN -->
+    <rect x="330" y="0" width="330" height="280" rx="8" fill="#18191b" stroke="#3c4043" />
+    <text x="350" y="30" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="13" font-weight="bold">Engine 2: CNN Foliar Disease Scanner</text>
+    <rect x="350" y="50" width="290" height="95" rx="6" fill="#141517" stroke="#3b82f6" />
+    <text x="365" y="78" fill="#9aa0a6" font-family="monospace" font-size="10">DISEASE DETECTION ACCURACY</text>
+    <text x="365" y="105" fill="#60a5fa" font-family="monospace" font-size="22" font-weight="bold">92.6%</text>
+    <text x="365" y="130" fill="#bfdbfe" font-family="-apple-system, sans-serif" font-size="10">Computer Vision Leaf Classification</text>
+
+    <text x="350" y="175" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="11" font-weight="bold">Early Diagnosis Impact:</text>
+    <text x="350" y="198" fill="#9aa0a6" font-family="-apple-system, sans-serif" font-size="10">Instant leaf blight &amp; mildew detection</text>
+    <text x="350" y="218" fill="#9aa0a6" font-family="monospace" font-size="10">Protects crop yields for smallholder farmers</text>
+    <text x="350" y="238" fill="#34d399" font-family="monospace" font-size="10">Shipped to VIT-TBI Agritech Startup</text>
+  </g>
+
+  </g>
+</svg>
